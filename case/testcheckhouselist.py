@@ -26,12 +26,12 @@ class checkHouseList(unittest.TestCase):
         self.driver.quit()
 
     def test01_loginresult(self):
-        self.driver.get('https://apichunmian.qufenqi.com/')
+        self.driver.get(urldata.url)
         name=self.driver.find_element(By.CLASS_NAME,'user-name').text
         self.assertEqual("王宽",name,"登录不成功")
 
 
     def test02_hosue_lists_page(self):
-        self.driver.get('https://apichunmian.qufenqi.com/house/lists')
+        self.driver.get(urldata.url+'/house/lists')
         name=self.driver.find_element(By.CLASS_NAME,'add-house').text
         self.assertEqual("新增房源",name,"全部房源页面有误")
