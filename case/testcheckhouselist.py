@@ -4,7 +4,7 @@ from selenium.common.exceptions import WebDriverException
 import unittest
 from data import logindata
 from data import urldata
-class justTest(unittest.TestCase):
+class checkHouseList(unittest.TestCase):
     def setUp(self):
         path = '/Library/Frameworks/Python.framework/Versions/3.6/'
         self.driver=webdriver.Chrome(path+'chromedriver')
